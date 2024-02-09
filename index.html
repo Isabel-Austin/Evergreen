@@ -1,0 +1,610 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Evergreen Eco</title>
+
+    <style>
+        .carousel-item {
+            height: 54.75rem;
+            background: #000000;
+            color: white;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container-carousel {
+            padding-bottom: 100px;
+        }
+
+        .carousel-item p {
+            padding-bottom: 10px;
+        }
+
+        .overlay-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.5;
+
+        }
+
+        .guilt-trip {
+            padding-top: 40px;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .guilt-trip .animatedwrapper {
+            padding-bottom: 1rem;
+            display: block;
+        }
+
+        .animatedwrapper h2 {
+            font-size: 5vw;
+            font-weight: 700;
+        }
+
+        .animatedwrapper span:before {
+            content: '';
+            animation: animate infinite 20s;
+        }
+
+        @keyframes animate {
+            0% {
+                content: 'World';
+            }
+
+            10% {
+                content: 'Life';
+            }
+
+            20% {
+                content: 'Planet';
+            }
+
+            30% {
+                content: 'Wildlife';
+            }
+
+            40% {
+                content: 'Future';
+            }
+
+            50% {
+                content: 'Energy';
+            }
+
+            60% {
+                content: 'Ecosystem';
+            }
+
+            70% {
+                content: 'Earth';
+            }
+
+            80% {
+                content: 'Climate';
+            }
+
+            90% {
+                content: 'Resources';
+            }
+
+            100% {
+                content: 'Self';
+            }
+        }
+
+        .main-info {
+            display: flex;
+        }
+
+        .main-info img {
+            display: grid;
+            width: 100%;
+            height: auto;
+        }
+        .main-info .container-fluid {
+            margin: 2rem;
+        }
+
+        .main-info .container-fluid .row {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-info .container-fluid .row .col {
+            padding: 0;
+        }
+
+        .main-info .container-fluid .row .col img {}
+
+        .main-info .container-fluid .row .col .row {
+            margin-top: 0rem;
+        }
+
+        .main-info .container-fluid .row .col .row .col {
+            text-align: center;
+            margin-bottom: var(--bs-gutter-y);
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .main-info .row h1 {
+            font-weight: 450;
+        }
+
+        .main-info .row p {
+            font-size: larger;
+        }
+
+        .threers {
+            align-content: center;
+            align-items: center;
+        }
+
+        .threers h1 {
+            text-align: center;
+        }
+
+        .threers .row {
+            margin: 2rem;
+        }
+
+        .threers .row .col {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .threers .row .col .card {
+            justify-content: space-between;
+        }
+
+        .threers .card {
+            overflow: hidden;
+        }
+
+        .threers .card-body {
+            z-index: 1;
+            background-color: white;
+        }
+
+        .threers .card h3 {
+            font-weight: bold;
+        }
+
+        .threers .card p {
+            font-size: 20px;
+            margin-bottom: 8px;
+            ;
+        }
+
+        .threers .card img {
+            transition: all 0.3s ease-in;
+        }
+
+        .threers .card img:hover {
+            transform: scale(1.3);
+        }
+
+
+        .faq {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+
+
+
+        .contact-us {
+            border-radius: 6px;
+            padding: 40px;
+            background-color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-us h2 {
+            font-size: xx-large;
+        }
+
+        .form {
+            background-color: rgb(250, 250, 250);
+            border-radius: 8px;
+            padding: 40px;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            padding: 15px;
+            background-color: #e9ecef;
+            font-size: 16px;
+        }
+
+        .form-button {
+            background-color: #e9ecef;
+            font-size: 18px;
+            border-radius: 10px;
+            padding: 15px 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-xxl">
+            <a href="main.html" class="navbar-brand">
+                <img src="Assets\evergreenlogo.png" alt="" srcset="">
+                <span class="fw-bolder text-secondary">
+                    Evergreen Eco
+                </span>
+            </a>
+            <!--Toggle Button For Mobile Nav-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Navbar Links-->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="solar.html">Solar Energy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="geothermal.html">Geothermal Energy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vehicle.html">Vehicle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="water.html">Heating</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sources.html">Sources</a></li>
+                            <li><a class="dropdown-item" href="refrences.html">Refrences</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Carousel-->
+    <section id="carousel" class="p-0">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="active"
+                    aria-current="true" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class="active"
+                    aria-current="true" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <div class="overlay-image" style="background-image:url(Assets/Home\ Page/slide-1.jpg);"></div>
+                    <div class="container-carousel carousel-caption">
+                        <h1 class="display-1 fw-bold">Evergreen Eco Solutions</h1>
+                        <p class="d-none d-md-block" style="font-size: 24;">Lorem ipsum dolor sit..</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="overlay-image" style="background-image:url(Assets/Home\ Page/slide-2.jpg);"></div>
+                    <div class="container-carousel carousel-caption">
+                        <h1 class="display-2 fw-bold">The Three R's</h1>
+                        <p class="d-none d-md-block" style="font-size: 24;">The first big step to becomign greener.</p>
+                        <a href="#threers" class="btn btn-lg btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="overlay-image" style="background-image:url(Assets/Home\ Page/slide-3.jpg);"></div>
+                    <div class="container-carousel carousel-caption">
+                        <h1 class="display-2 fw-bold">Blah Blah</h1>
+                        <p class="d-none d-md-block" style="font-size: 24;">Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <!--Guilt Trip-->
+
+    <section id="guilt-trip" class="guilt-trip">
+        <div class="content">
+            <div class="animatedwrapper">
+                <h2>Save Your <span></span></h2>
+            </div>
+            <p>There are many ways for you to make a positive impact on earth's ecosystm from large million-dollar projects to simple lifestyle changes. Continue reading to learn how you can make a difference!</p>
+        </div>
+    </section>
+
+    <!--Main Info-->
+
+    <section class="main-info">
+        <div class="container-fluid">
+            <div class="section-title">
+                <h1>Solutions</h1>
+                <p>Learn how you can make an difference for the better through:</p>
+            </div>
+            <div class="row">
+                <div class="col me-4 ms-4 ms-xxl-0">
+                    <div class="row row-cols-1 row-cols-sm-2 gy-4">
+                        <div class="col border border-5 rounded-5 bg-success">
+                            <h1 class="display-4">Solar Power</h1>
+                            <p>Solar power energy systems are one of the most notorious in the conversation of green energy and for good reason! It's a fantastic method of creating and storing your own energy. With the sun, we can obtain clean energy but also contribute to lowering electricity bills and energy/electricity independence.</p>
+                        </div>
+                        <div class="col border border-5 rounded-5 bg-warning">
+                            <h1 class="display-4"> Reducing Water</h1>
+                            <p>Millions of gallons of water are wasted every year through careless use. If we make our consumption of water more mindful, we can preserve more of this essential resource for the future. Simple everyday actions like taking shorter showers can collectively make a significant impact.</p>
+                        </div>
+                        <div class="col border border-5 rounded-5 bg-danger">
+                            <h1 class="display-4">Geothermal Heating and Cooling Systems</h1>
+                            <p>Geothermal heating and cooling systems help you interact with the environment in a sustainable and effective way. With the Earth's natural heat, these systems provide a sustainable, cost-effective alternative for heating and cooling, ensuring a greener future.</p>
+                        </div>
+                        <div class="col border border-5 rounded-5 bg-info">
+                            <h1 class="display-4">Electric Vehicles</h1>
+                            <p>With the development of Tesla and other companies that focus on the production of electic vehicles, you may be wondering "what's all the fuss about?" but they really are a fantastic way to reduce carbon emissions. You won't even need to buy expensive gas. Embrace the electric revolution, cut down on emissions, and cruise towards a cleaner, greener future.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-none d-xxl-block p-0 me-4 me-xxl-0">
+                    <img class="img-fluid rounded-4" src="Assets\Home Page\tree.png.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Three R's-->
+    <section id="threers" class="threers">
+        <div class="section-title">
+            <h1 class="display-1 fw-bold">The Three R's</h1>
+            <p>By Reducing, Reusing and Recycling we can become greener with simplicity.</p>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center">
+            <div class="col">
+                <div class="card">
+                    <img src="Assets\Home Page\reduce.avif" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Reduce</h3>
+                        <p class="card-text">Small actions lead to grand impacts! Minimize waste and maximize sustainability.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Assets\Home Page\reuse.avif" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Reuse</h3>
+                        <p class="card-text">Make the most out of everything! Cut down waste and add up the uses.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Assets\Home Page\recycle.avif" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Recycle</h3>
+                        <p class="card-text">Reinvigorate life by completing the cycle! Turn the waste back into anything useful.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Greener Living FAQ-->
+
+    <section id="faq" class="faq">
+        <div class="section-title">
+            <h2>Freqently Asked Questions</h2>
+        </div>
+        <div class="accordion" id="accordionFather">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What's the best way to help the envirnment?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFather">
+                    <div class="accordion-body">
+                        <strong>Any way you can.</strong>  There is no one perfect way of helping the envirnment. Everyone's curcumstances differ
+                        and the best way you can help is by doing whatever your situation allows. Hopefully this website can help you discover a
+                        practical way of making a difference that doesen't break the bank! 
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFather">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFather">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Accordion Item #4
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFather">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Accordion Item #5
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFather">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Contact Us-->
+
+   <!--<section id="contact-us">
+        <div class="container-lg">
+            <div class="input-group mb-4">
+                <input type="text" class="form-control" placeholder="Your Name" aria-label="Your Name">
+            </div>
+            <div class="input-group mb-4">
+                <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email">
+            </div>
+            <div class="input-group mb-4">
+                <input type="text" class="form-control" placeholder="Subject" aria-label="Subject">
+            </div>
+            <div class="input-group mb-4">
+                <input type="text" class="form-control" placeholder="Message" aria-label="Message">
+            </div>
+        </div>
+    </section>-->
+
+    <section id="contact-us" class="contact-us container-lg">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>We'd love to get your feedback for any other green solutions.</p>
+        </div>
+
+        <div class="form">
+            <form action="https://formspree.io/f/mnqeawng" method="POST">
+                <div class="form-section">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-section">
+                    <input type="email" class="form-control" name="_replyto" id="email" placeholder="Your Email"
+                        required="" data-rule="email">
+                </div>
+                <div class="form-section">
+                    <input type="text" class="form-control" name="_subject" id="subject" placeholder="Subject"
+                        required="">
+                </div>
+                <div class="form-section">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="form-button">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="footer-contact">
+                            <h3>Evergreen Eco</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright"> © 2023 <strong>
+                        <span>Evergreen Eco</span>
+                    </strong>. All Rights Reserved </div>
+            </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <script>
+        window.onbeforeunload = () => {
+            for (const form of document.getElementsByTagName('form')) {
+                form.reset();
+            }
+        }
+    </script>
+</body>
+
+</html>

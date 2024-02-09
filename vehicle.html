@@ -1,0 +1,339 @@
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Evergreen Eco</title>
+
+    <style>
+        html {
+            overflow-x: hidden;
+        }
+
+
+        .topic {
+            display: flexbox;
+            align-items: center;
+            width: 100%;
+        }
+
+        .background {
+            display: grid;
+            height: 54.75rem;
+            background-image: url("Assets/Vehicle Page/vehiclemain.avif");
+            background-position: center;
+            background-size: cover;
+            align-items: center;
+            margin: auto;
+        }
+
+
+        .background h1 {
+            display: block;
+            font-weight: bold;
+            text-align: center;
+            justify-self: center;
+            font-size: 10vw;
+            text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+                1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -0px 1px #fff;
+        }
+
+
+        .background h1 .text {}
+
+
+        .imageslider {
+            display: grid;
+            place-content: center;
+        }
+
+
+        .slider {
+            height: 250px;
+            margin: auto;
+            position: relative;
+            width: 90%;
+            display: grid;
+            place-items: center;
+        }
+
+
+        .slidingtrack {
+            display: flex;
+            left: 0;
+            width: calc(250px * 20);
+            animation: scroll 40s linear infinite;
+            overflow: hidden;
+        }
+
+
+        .slidingtrack:hover {
+            animation-play-state: paused;
+        }
+
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(calc(130px*10));
+            }
+
+
+            100% {
+                transform: translateX(calc(-170px*10));
+            }
+        }
+
+
+        .slide {
+            display: flex;
+            height: 200px;
+            width: 400px;
+            align-items: center;
+            padding: 15px;
+            perspective: 100px;
+            object-fit: cover;
+        }
+
+
+        img {
+            transition: transform 1s;
+            overflow: hidden;
+        }
+
+
+        .slider::before,
+        .slider::after {
+            background: linear-gradient(to right, rgb(87, 92, 87)0%, rgba(255, 255, 255, 0)20%);
+            content: '';
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .content {
+            margin-left: 8vw;
+            margin-right: 8vw;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-xxl">
+            <a href="index.html" class="navbar-brand">
+                <img src="Assets\evergreenlogo.png" alt="" srcset="">
+                <span class="fw-bolder text-secondary">
+                    Evergreen Eco
+                </span>
+            </a>
+            <!--Toggle Button For Mobile Nav-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Navbar Links-->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="solar.html">Solar Energy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="geothermal.html">Geothermal Energy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vehicle.html">Vehicle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="water.html">Heating</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sources.html">Sources</a></li>
+                            <li><a class="dropdown-item" href="refrences.html">Refrences</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Topic-->
+
+
+    <section id="topic" class="topic">
+        <div class="background">
+            <h1>Electric Vehicles</h1>
+        </div>
+    </section>
+
+
+    <!--Image Carousel-->
+
+
+
+
+    <!--Description-->
+
+
+    <section class="infiniteslider">
+        <div class="section-title">
+            <h1>What Do Electric Vehicles Look Like?</h1>
+        </div>
+        <div class="imageslider">
+            <div class="slider">
+                <div class="slidingtrack">
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle1.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle2.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle3.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle4.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle5.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle6.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle7.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle8.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle9.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle10.avif">
+                    </div>
+
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle1.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle2.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle3.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle4.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle5.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle6.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle7.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle8.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle9.avif">
+                    </div>
+                    <div class="slide">
+                        <img src="Assets\Vehicle Page\vehicle10.avif">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Information-->
+    <section class="info">
+        <div class="content">
+            <div class="section-title">
+                <h1>Information</h1>
+            </div>
+            <p> 
+            </p>
+        </div>
+    </section>
+
+    <!--Cost-->
+    <section class="cost">
+        <div class="content">
+            <div class="section-title">
+                <h1>Cost</h1>
+            </div>
+            <p>
+
+            </p>
+        </div>
+    </section>
+
+    <!--Tax Rebate-->
+    <section class="tax">
+        <div class="content">
+            <div class="section-title">
+                <h1>Tax rebate information</h1>
+            </div>
+            <p>
+
+            </p>
+        </div>
+    </section>
+
+    <!--Green Practices-->
+    <section class="green-practices">
+        <div class="content">
+            <div class="section-title">
+                <h1>Clean/green energy practices</h1>
+            </div>
+            <p>
+
+            </p>
+        </div>
+    </section>
+
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="footer-contact">
+                            <h3>Evergreen Eco</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright"> © 2023 <strong>
+                        <span>Evergreen Eco</span>
+                    </strong>. All Rights Reserved </div>
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+</body>
+
+
+</html>
