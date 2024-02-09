@@ -71,10 +71,6 @@
         }
 
 
-        .slidingtrack:hover {
-            animation-play-state: paused;
-        }
-
 
         @keyframes scroll {
             0% {
@@ -102,17 +98,6 @@
         img {
             transition: transform 1s;
             overflow: hidden;
-        }
-
-
-        .slider::before,
-        .slider::after {
-            background: linear-gradient(to right, rgb(87, 92, 87)0%, rgba(255, 255, 255, 0)20%);
-            content: '';
-            height: 100%;
-            position: absolute;
-            width: 100%;
-            z-index: 2;
         }
 
         .content {
