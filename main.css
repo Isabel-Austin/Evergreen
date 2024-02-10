@@ -30,7 +30,7 @@ section {
 }
 
 .section-title h1 {
-    font-size: 64px;
+    font-size:calc(48px + 1.5vw);
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -38,7 +38,7 @@ section {
 }
 
 .section-title h2 {
-    font-size: 48px;
+    font-size: calc(36px + 1.5vw);
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -58,8 +58,7 @@ p {
     contain: content;
     width: 100px;
     border-radius: 40%;
-    scale: 1.2;
-    image-rendering:crisp-edges;
+    object-fit: contain;
 }
 
 .navbar-brand span {
@@ -88,6 +87,7 @@ p {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 
 .dropdown-toggle {
     border-right: 0;
