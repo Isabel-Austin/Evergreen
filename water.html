@@ -9,6 +9,103 @@
     <title>Evergreen Eco</title>
 </head>
 
+    <style>
+        html {
+            overflow-x: hidden;
+        }
+
+
+        .topic {
+            display: flexbox;
+            align-items: center;
+            width: 100%;
+        }
+
+        .background {
+            display: grid;
+            height: 54.75rem;
+            background-image: url("Assets/Vehicle Page/vehiclemain.avif");
+            background-position: center;
+            background-size: cover;
+            align-items: center;
+            margin: auto;
+        }
+
+
+        .background h1 {
+            display: block;
+            font-weight: bold;
+            text-align: center;
+            justify-self: center;
+            font-size: 10vw;
+            text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+                1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -0px 1px #fff;
+        }
+
+
+        .background h1 .text {}
+
+
+        .imageslider {
+            display: grid;
+            place-content: center;
+        }
+
+
+        .slider {
+            height: 250px;
+            margin: auto;
+            position: relative;
+            width: 90%;
+            display: grid;
+            place-items: center;
+        }
+
+
+        .slidingtrack {
+            display: flex;
+            left: 0;
+            width: calc(250px * 20);
+            animation: scroll 40s linear infinite;
+            overflow: hidden;
+        }
+
+
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(calc(130px*10));
+            }
+
+
+            100% {
+                transform: translateX(calc(-170px*10));
+            }
+        }
+
+
+        .slide {
+            display: flex;
+            height: 200px;
+            width: 400px;
+            align-items: center;
+            padding: 15px;
+            perspective: 100px;
+            object-fit: cover;
+        }
+
+
+        img {
+            transition: transform 1s;
+            overflow: hidden;
+        }
+
+        .content {
+            margin-left: 8vw;
+            margin-right: 8vw;
+        }
+    </style>
+
 <body>
 
     <!--Navbar-->
@@ -39,7 +136,7 @@
                         <a class="nav-link" href="vehicle.html">Vehicle</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="water.html">Heating</a>
+                        <a class="nav-link" href="water.html">Water</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -56,7 +153,12 @@
         </div>
     </nav>
 
-    
+    <section id="topic" class="topic">
+        <div class="background">
+            <h1>Water</h1>
+        </div>
+    </section>
+
     <!--Information-->
     <section class="info">
         <div class="content">
