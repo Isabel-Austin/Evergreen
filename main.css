@@ -12,10 +12,10 @@ html {
 
 body {
     background-color: #E2F5E0;
-    background-color: #aebd93;
+    background-color: white;
  touch-action: manipulation;
     overflow-x: hidden;   
-    background-color: rgb(187,194,179,29)
+    background-color: rgb(187,194,179,29);
 }
 
 section {
@@ -63,7 +63,7 @@ p {
 .navbar {
     background-position: center;
     background-position-y: 2040px;
-    background-color: rgb(55,61,32);
+    background-color: rgb(24, 63, 21);
 }
 
 .navbar-brand {
@@ -128,7 +128,7 @@ p {
 }
 
 .dropdown-menu {
-    background-color: #aebd93;
+    background-color: rgb(24, 63, 21);;
     direction: rtl;
     float: right;
 }
@@ -167,3 +167,11 @@ p {
     color: white;
 }
 
+.dropdown-item:hover {
+    background-color: rgba(41, 127, 30, 0.304);
+    color: black;
+}
+
+.dropdown-item {
+    color:black;
+}
