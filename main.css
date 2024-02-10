@@ -76,7 +76,7 @@ p {
 }
 .nav-item {
     font-weight: 700;
-    color: #19fa00;
+    color: black;
 }
 
 .nav-item:hover {
@@ -109,7 +109,9 @@ p {
     color: black;
 }
 
-.color-secondary {}
+.color-secondary {
+
+}
 
 
 .footer {
@@ -127,9 +129,8 @@ p {
 }
 
 .footer h3 {
+    color:white;
     display: inline-block;
-    border-radius: 8px;
-    background-color: #E2F5E0;
     overflow: hidden;
 }
 
