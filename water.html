@@ -9,6 +9,103 @@
     <title>Evergreen Eco</title>
 </head>
 
+    <style>
+        html {
+            overflow-x: hidden;
+        }
+
+
+        .topic {
+            display: flexbox;
+            align-items: center;
+            width: 100%;
+        }
+
+        .background {
+            display: grid;
+            height: 54.75rem;
+            background-image: url("Assets/Vehicle Page/vehiclemain.avif");
+            background-position: center;
+            background-size: cover;
+            align-items: center;
+            margin: auto;
+        }
+
+
+        .background h1 {
+            display: block;
+            font-weight: bold;
+            text-align: center;
+            justify-self: center;
+            font-size: 10vw;
+            text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+                1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -0px 1px #fff;
+        }
+
+
+        .background h1 .text {}
+
+
+        .imageslider {
+            display: grid;
+            place-content: center;
+        }
+
+
+        .slider {
+            height: 250px;
+            margin: auto;
+            position: relative;
+            width: 90%;
+            display: grid;
+            place-items: center;
+        }
+
+
+        .slidingtrack {
+            display: flex;
+            left: 0;
+            width: calc(250px * 20);
+            animation: scroll 40s linear infinite;
+            overflow: hidden;
+        }
+
+
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(calc(130px*10));
+            }
+
+
+            100% {
+                transform: translateX(calc(-170px*10));
+            }
+        }
+
+
+        .slide {
+            display: flex;
+            height: 200px;
+            width: 400px;
+            align-items: center;
+            padding: 15px;
+            perspective: 100px;
+            object-fit: cover;
+        }
+
+
+        img {
+            transition: transform 1s;
+            overflow: hidden;
+        }
+
+        .content {
+            margin-left: 8vw;
+            margin-right: 8vw;
+        }
+    </style>
+
 <body>
 
     <!--Navbar-->
@@ -39,7 +136,7 @@
                         <a class="nav-link" href="vehicle.html">Vehicle</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="water.html">Heating</a>
+                        <a class="nav-link" href="water.html">Water</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -56,57 +153,13 @@
         </div>
     </nav>
 
-    
+    <section id="topic" class="topic">
+        <div class="background">
+            <h1>Water</h1>
+        </div>
+    </section>
+
     <!--Information-->
-    <section class="info">
-        <div class="content">
-            <div class="section-title">
-                <h1>Information</h1>
-            </div>
-            <p> 
-                Electric vehicles (EVs), run on electricity instead of gasoline which significantly reduces greenhouse gas emissions and air pollution. EVs are powered by rechargeable batteries and have no tailpipe emissions like gas powered cars. They can be charged at home or at public charging stations, and are becoming more popular. There are now many models available with different ranges and features, and are great choice for eco-consciousness individuals who want to reduce their carbon footprint. Try purchasing a new or used electric vehicle for your next choice! 
-
-            </p>
-        </div>
-    </section>
-
-    <!--Cost-->
-    <section class="cost">
-        <div class="content">
-            <div class="section-title">
-                <h1>Cost</h1>
-            </div>
-            <p>
-                There is a wide variability in the cost of buying an eclectic vehicle. If you buy used, it will probably be cheaper than if bought new like gas powered cars. Either way electric vehicles do tend to more expensive however the cost is offset by the savings on fuel. Charging an electric car is cheaper than fueling one up and this paired with the tax rebates you can receive, the prices can even out after a couple years.
-            </p>
-        </div>
-    </section>
-
-    <!--Tax Rebate-->
-    <section class="tax">
-        <div class="content">
-            <div class="section-title">
-                <h1>Tax rebate information</h1>
-            </div>
-            <p>
-                You can receive a tax rebate of a maximum of $7,500 for the purchase of a new clean energy vehicle as long as it qualifies or a maximum of $4,000 for the purchase of a used clean energy vehicle. The way the amount is calculated is you will receive $2,917 if the battery capacity is at least 5 kilowatt hours (kWh) and an additional $417 for each kWh over 5 up to the limit stated above. To receive this, it must also have an external charging source and weigh under 14,000 pounds.
-
-            </p>
-        </div>
-    </section>
-
-    <!--Green Practices-->
-    <section class="green-practices">
-        <div class="content">
-            <div class="section-title">
-                <h1>Clean/green energy practices</h1>
-            </div>
-            <p>
-                By reducing the carbon emissions given off by your car you can make a big impact in your local environments smell and appearance. On a large scale, the mass use of clean energy vehicles could mean an enormous impact on the earth’s ecosystem. 
-
-            </p>
-        </div>
-    </section>    <!--Information-->
     <section class="info">
         <div class="content">
             <div class="section-title">
