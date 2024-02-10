@@ -97,7 +97,7 @@ p {
 }
 
 .nav-item:hover {
-    background-color: rgb(76,85,41)
+    background-color: rgba(41, 127, 30, 0.304);
     /*border-radius: 15px;*/
 }
 
