@@ -4,8 +4,9 @@ html {
 }
 
 body {
-    background-color: #E2F5E0;
-    background-color: #aebd93;
+    /*background-color: #E2F5E0;
+    background-color: #aebd93;*/
+    background-color: rgb(187,194,179,29)
 }
 
 section {
@@ -51,7 +52,7 @@ p {
 }
 
 .navbar {
-    background-color: #525a33;
+    background-color: rgb(55,61,32);
 }
 
 .navbar-brand img {
@@ -65,21 +66,22 @@ p {
     padding-left: 10px;
     font-size: 30px;
     vertical-align: middle;
+   
 }
 
 .navbar-nav {
     font-size: 20px;
     text-align: center;
+
 }
 .nav-item {
     font-weight: 700;
-    color: #535353;
+    color: #19fa00;
 }
 
 .nav-item:hover {
-    color: #000000;
-    background-color: #aebd93;
-    border-radius: 15px;
+    background-color: rgb(76,85,41)
+    /*border-radius: 15px;*/
 }
 
 .nav-link {
@@ -94,7 +96,13 @@ p {
 }
 
 .dropdown-menu {
-    background-color: #aebd93;
+    color: black;
+    /*background-color: #aebd93;*/
+    background-color: rgb(55,61,32);
+}
+
+.dropdown-item:hover {
+    background-color: rgb(76,85,41);
 }
 
 .color-primary {
@@ -127,7 +135,6 @@ p {
 
 .copyright {
     display: inline-block;
-    color: rgb(0, 0, 0);
-    border-radius: 8px;
-    background-color: #E2F5E0;
+    color: white;
 }
+
