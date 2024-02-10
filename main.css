@@ -98,7 +98,7 @@ p {
 
 .nav-item:hover {
     background-color: rgba(41, 127, 30, 0.304);
-    /*border-radius: 15px;*/
+    border-radius: 15px;
 }
 
 .nav-link {
