@@ -108,12 +108,15 @@ p {
 .dropdown {
     direction:rtl;
     align-items: center;
+    display: grid;
+    place-items: center;
 }
 
 .dropdown-menu {
     right: 0;
     float:right;
-    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 .dropdown-toggle {
