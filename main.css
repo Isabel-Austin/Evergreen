@@ -61,7 +61,6 @@ p {
 }
 
 .navbar {
-    background-image: url("Assets/evergreenlogo.png");
     background-position: center;
     background-position-y: 2040px;
     background-color: rgb(55,61,32);
