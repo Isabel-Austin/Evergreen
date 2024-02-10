@@ -13,8 +13,9 @@ html {
 body {
     background-color: #E2F5E0;
     background-color: #aebd93;
-    touch-action: manipulation;
-    overflow-x: hidden;
+ touch-action: manipulation;
+    overflow-x: hidden;   
+    background-color: rgb(187,194,179,29)
 }
 
 section {
@@ -60,10 +61,10 @@ p {
 }
 
 .navbar {
-    background-color: #525a33;
     background-image: url("Assets/evergreenlogo.png");
     background-position: center;
     background-position-y: 2040px;
+    background-color: rgb(55,61,32);
 }
 
 .navbar-brand {
@@ -82,22 +83,23 @@ p {
     padding-left: 5px;
     font-size: calc(20px + 1.5vw);
     vertical-align: middle;
+   
 }
 
 .navbar-nav {
     font-size: 16px;
     text-align: center;
+
 }
 
 .nav-item {
     font-weight: 700;
-    color: #535353;
+    color: black;
 }
 
 .nav-item:hover {
-    color: #000000;
-    background-color: #aebd93;
-    border-radius: 15px;
+    background-color: rgb(76,85,41)
+    /*border-radius: 15px;*/
 }
 
 .nav-link {
@@ -136,7 +138,9 @@ p {
     color: black;
 }
 
-.color-secondary {}
+.color-secondary {
+
+}
 
 
 .footer {
@@ -154,15 +158,13 @@ p {
 }
 
 .footer h3 {
+    color:white;
     display: inline-block;
-    border-radius: 8px;
-    background-color: #E2F5E0;
     overflow: hidden;
 }
 
 .copyright {
     display: inline-block;
-    color: rgb(0, 0, 0);
-    border-radius: 8px;
-    background-color: #E2F5E0;
+    color: white;
 }
+
