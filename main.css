@@ -1,6 +1,7 @@
 html {
     user-select: none;
     -webkit-user-select: none;
+    overflow-x: hidden;
 }
 
 body {
@@ -93,15 +94,18 @@ p {
     padding-left: 10px;
     padding-right: 10px;
     direction:ltr;
+    align-items: center;
 }
 
 .dropdown {
     direction:rtl;
+    align-items: center;
 }
 
 .dropdown-menu {
     right: 0;
     float:right;
+    align-items: center;
 }
 
 .dropdown-toggle {
